@@ -1,4 +1,4 @@
-# NetdataLatestOnUbuntu22
+# Netdata Latest On Ubuntu 22
 Running netdata latest version on ubuntu 22.04
 
 Netdata sunucu izleme yazılımıdır. Netdata ekibi ubuntu 18 üzerine destek vermiyor. Ubuntu 22.04 üzerine yüklemek için Netdata 1.3.1 kullanabiliyorsunuz.
