@@ -1,5 +1,13 @@
 Dym roollap için subdomain yönlendirme
-Ssl ve Nginx kurulumu
+
+Bu klavuzda yönlendirilecekleriniz:
+1. Node sunucunuza SSL kurulumu
+2. Node sunucunuza Nginx kurulumu
+3. Domain alımı, hosting kiralamanız
+4. Hostinginiz üzerinden sub domainler açıp, node sunucunuza yönlendirmeniz.
+
+
+1. Ssl kurulumu
 
 Aşağıdaki Komut ile openssl kurun
     
@@ -28,6 +36,128 @@ Sertifika public.crt dosyalarını (/etc/ssl/certs) dizinine kopyalayın.
 
     cp private.key /etc/ssl/private/private.key
 
+2. Nginx kurulumu
+	Bu anlatımda sunucunuzda apache olmadığı, gerek olmadığı veya kaldırdığınız varsayılmıştır.
+        Node sunucunuzun işletim versiyonuna göre nginx kurmuş olmanız gerekiyor. Bu adımda ubuntu 22.04 için kurulumu anlatılacak.
+
+		sudo apt update
+		sudo apt install nginx
+Güvenlik duvarı ayarları. Ufw yüklü ise
+
+		sudo ufw app list
+aşağıdaki gibi birr çıktı almanız gerekli
+OutputAvailable applications:
+  Nginx Full
+  Nginx HTTP
+  Nginx HTTPS
+  OpenSSH
+
+		sudo ufw allow 'Nginx HTTP'
+  kontrol edelim
+  		
+    sudo ufw status
+Aşağıdaki gibi bir çıktı alacaksınız
+ OutputStatus: active
+
+To                         Action      From
+--                         ------      ----
+OpenSSH                    ALLOW       Anywhere                  
+Nginx HTTP                 ALLOW       Anywhere                  
+OpenSSH (v6)               ALLOW       Anywhere (v6)             
+Nginx HTTP (v6)            ALLOW       Anywhere (v6)
+
+
+
+Nginx çalışıyor mu kontorl edin
+
+		systemctl status nginx
+
+Aşağıdakine benzer bir çıktı almanız lazım
+ nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sun 2024-02-11 13:05:39 +03; 42min ago
+       Docs: man:nginx(8)
+    Process: 192319 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exit>
+    Process: 192322 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, statu>
+   Main PID: 192326 (nginx)
+      Tasks: 29 (limit: 57330)
+     Memory: 25.0M
+        CPU: 297ms
+     CGroup: /system.slice/nginx.service
+             ├─192326 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             ├─192327 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ">
+             ├─192328 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ">
+             ├─192329 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ">
+             ├─192330 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ">
+             ├─192331 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" 
+
+Herşey normal görünüyorsa chrome veya benzeri http://sunucu_ipiniz  ile nginx karşılama sayfasını görmeniz lazım
+
+2.1 Nginx domain tanımlama
+
+		sudo mkdir -p /var/www/domaininiz.com
+  		sudo chown -R $USER:$USER /var/www/domaininiz.com
+    		sudo chmod -R 755 /var/www/domaininiz.com
+Şimdi domain adresinize girdiğinizde açılmasını istediğiniz sayfayı kabaca tasarlayalım
+
+
+		nano /var/www/domaininiz.com/index.html
+  içerisine aşağıdakini girip ctrl+x yes çıkalım
+
+  		<html>
+    <head>
+        <title>Nignx calisiyor</title>
+    </head>
+    <body>
+        <h1>Bu sayfaya acildiysa Nginx calisiyor demektir</h1>
+    </body>
+	</html>
+
+Şimdi domainizi Nginx'e tanıtacağız
+	
+ 	sudo nano /etc/nginx/sites-available/domaininiz.com
+
+  Aşağıdakileri girin
+  
+  	server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/domaininiz.com;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name domaininiz.com www.domaininiz.com;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+	}
+
+ Dosyayı etkinleştirin
+
+ 	udo ln -s /etc/nginx/sites-available/domaininiz.com /etc/nginx/sites-enabled/
+  
+Ufak bir ayar kaldı
+
+	sudo nano /etc/nginx/nginx.conf
+
+ aşağıdaki değeri bulup değiştirin
+ 
+ 	http {
+    ...
+    server_names_hash_bucket_size 64;
+    ...
+	}
+
+ Nginx yapılandırmasını kontrol edelim
+
+  	 nginx -t
+
+Hata vermediyse 
+
+	systemctl restart nginx
+
+ 
 
 Ubuntu Nginx ssl sertifikası yükleme
 Nginx yüklediyseniz
@@ -92,7 +222,7 @@ içerisine
         }   
     }
 
-aynısını bu defa da
+aynısını bu defa da sites-enabled/domaininiz.com
     
     nano etc/nginx/sites-enabled/domaininiz.com
 
