@@ -1,4 +1,5 @@
-Ubuntu 22.04 üzerine SSL kurulumu
+Dym roollap için subdomain yönlendirme
+Ssl ve Nginx kurulumu
 
 Aşağıdaki Komut ile openssl kurun
     
