@@ -17,6 +17,7 @@ En alta bu satırı paste edin ve CTRL +X ile çıkın
         nano /root/gasp.log
 
 yeşildeki gibiyse tamam
+crontab içerisindeki satırı silinki denemeye devam etmesin
 
 
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/ea2e296e-cfa3-400e-b1fc-54745bfa4e4f)
