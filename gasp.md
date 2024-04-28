@@ -1,4 +1,4 @@
-Gasp için  her dakika  otomatik çalıştırır. Boş yer bulursa işlemi tamamlar
+Gasp için  her 5 dakikada bir otomatik çalıştırır. Boş yer bulursa işlemi tamamlar
 
     wget https://github.com/Madmin27/Ubuntu-22.04-notlarim/blob/main/gasprun.sh
     chmod +x /root/gasprun.sh
