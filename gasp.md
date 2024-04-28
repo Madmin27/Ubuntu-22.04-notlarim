@@ -18,4 +18,6 @@ En alta bu satırı paste edin ve CTRL +X ile çıkın
 
 yeşildeki gibiyse tamam
 
-![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/4991d7a8-fc3e-4b86-ba4c-ec74e6b52d3c)
+
+![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/ea2e296e-cfa3-400e-b1fc-54745bfa4e4f)
+
