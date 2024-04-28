@@ -6,6 +6,5 @@ cd /root/avs-operator-setup && ./run.sh opt-in >> "$LOG_FILE" 2>&1
 cd
 
 #chmod +x /root/gasprun.sh
-#* * * * * /root/gasprun.sh
 #*/5 * * * * /root/gasprun.sh
 
