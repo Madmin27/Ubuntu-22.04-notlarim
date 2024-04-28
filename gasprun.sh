@@ -7,3 +7,5 @@ cd
 
 #chmod +x /root/gasprun.sh
 #* * * * * /root/gasprun.sh
+#*/5 * * * * /root/gasprun.sh
+
