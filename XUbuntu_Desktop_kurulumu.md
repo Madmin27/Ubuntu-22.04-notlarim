@@ -43,7 +43,7 @@ Bağlandıktan sonra aşağıdaki gibi bir ekrana ulaşmanız lazım. Buraya tek
 sol üstten Uygulamalar/internet Tarayıcısı var tıklayın arama kısmına chrome yazıp aratın ve download kısmında (64 bit .deb (Debian/Ubuntu için)) olanı indirin.
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/c0a97288-93b6-4451-85cd-8921290c9a75)
 
-Yine Uygulamalr/Dosya yönetici tıklayıp "indirilenler/download" klasörüne gidip Chrome bulun. 
+Yine Uygulamalar/Dosya yönetici tıklayıp "indirilenler/download" klasörüne gidip Chrome bulun. 
 Sunucunuza inen (google-chrome-stable_current_amd64) dosyasının üzerine sağ tıklayıp "Gdebi paket kurucu ile aç" tıklayın.
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/8bb8b837-264f-4606-86f0-28a6129c5d24)
 
@@ -51,7 +51,11 @@ Sunucunuza inen (google-chrome-stable_current_amd64) dosyasının üzerine sağ 
 ### 4_ Rivalzi indirme ve kurma
  Chrome uzantı mağazasına gidip, metamask uzantısını ekleyin. Eski veya yeni adres alıp kelimeleri saklayın.
  Sonra rivalzi.io sitesine yine sunucu üzerinden giderek For Linux olanı indirip kurun.
-![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/2a29f802-03fd-451c-8abe-c0b406fba7df)
+
+Uygulamalar/Dosya yönetici tıklayıp "indirilenler/download" klasörüne gidip
+Sağ tıklayıp, özellikler/izinler paket gibi yükle.. kapat
+![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/c336c962-c778-4d8f-a024-753e800bf858)
+
 
 Sonrasını [rivalzi](https://rivalz.ai?r=Serhatim77) görevlerinden yapıyorsunuz işte
 
