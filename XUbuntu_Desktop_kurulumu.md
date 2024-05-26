@@ -15,5 +15,5 @@ xubuntu-desktop yükleyin.
 		
 		sudo apt install xubuntu-desktop
 
-https://ubuntuhandbook.org/wp-content/uploads/2023/04/xfce-select-dm-768x533.webp
+
 
