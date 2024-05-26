@@ -19,7 +19,7 @@ xubuntu-desktop yükleyin.
 
 Sorunsuz yüklemeyi bitirdinizse, sunucunuzu yeniden başlatın.
 
-### 2_ Ubuntu Uzak Masa Üst bağlantısı Nasıl Yapılır
+### 2_ Ubuntu Uzak Masa Üstü bağlantısı Nasıl Yapılır
 
 	sudo apt-get install xrdp
  	sudo service xrdp restart
@@ -41,7 +41,7 @@ windows gibi kullanarak, uygulamalardan chrome bulup kurun. Chrome uzantı mağa
  Sonra rivalzi.io sitesine yine sunucu üzerinden giderek For Linux olanı indirip kurun.
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/2a29f802-03fd-451c-8abe-c0b406fba7df)
 
-Sonrasını rivalzi görevlerinden yapıyorsunuz işte
+Sonrasını [rivalzi](https://rivalz.ai?r=Serhatim77) görevlerinden yapıyorsunuz işte
 
 
-
+Yıldız verirseniz memnun olurum. İyi çalışmalar
