@@ -57,6 +57,10 @@ Sunucunuza inen (google-chrome-stable_current_amd64) dosyasının üzerine sağ 
  Sonra rivalzi.io sitesine yine sunucu üzerinden giderek For Linux olanı indirip kurun.
 
 Uygulamalar/Dosya yönetici tıklayıp "indirilenler/download" klasörüne gidip
+
+  	not. Aşağıda sorun yaşarsanız
+		sudo apt install libfuse2
+  
 Sağ tıklayıp, özellikler/izinler paket gibi yükle.. kapat
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/c336c962-c778-4d8f-a024-753e800bf858)
 
