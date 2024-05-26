@@ -1,6 +1,6 @@
 ### 1_ Ubuntu içerisine XFCE4/XUbuntu Desktop Kurulumu
 
-Putty benzeri terminalinizi açıp aşağıdaki komutları girin.
+Putty benzeri terminalinizi açıp karşı sunucunuza bağlanın ve aşağıdaki komutları girin.
 		
 		sudo apt update
 
