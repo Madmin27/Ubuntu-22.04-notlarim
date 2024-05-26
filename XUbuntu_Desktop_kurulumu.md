@@ -45,7 +45,7 @@ sol üstten Uygulamalar/internet Tarayıcısı var tıklayın arama kısmına ch
 
 Yine Uygulamalar/Dosya yönetici tıklayıp "indirilenler/download" klasörüne gidip Chrome bulun. 
 
-	Not: Aşağıdaki işlemi yaparken sorun yaşarsanız
+	Not: Aşağıdaki işlemi yaparken sorun yaşarsanız. Kendi pc nizdeki terminalden sunucunuza bağlanıp
 		sudo apt install gdebi
 
 Sunucunuza inen (google-chrome-stable_current_amd64) dosyasının üzerine sağ tıklayıp "Gdebi paket kurucu ile aç" tıklayın.
