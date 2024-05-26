@@ -44,6 +44,10 @@ sol üstten Uygulamalar/internet Tarayıcısı var tıklayın arama kısmına ch
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/c0a97288-93b6-4451-85cd-8921290c9a75)
 
 Yine Uygulamalar/Dosya yönetici tıklayıp "indirilenler/download" klasörüne gidip Chrome bulun. 
+
+	Not: Aşağıdaki işlemi yaparken sorun yaşarsanız
+		sudo apt install gdebi
+
 Sunucunuza inen (google-chrome-stable_current_amd64) dosyasının üzerine sağ tıklayıp "Gdebi paket kurucu ile aç" tıklayın.
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/8bb8b837-264f-4606-86f0-28a6129c5d24)
 
