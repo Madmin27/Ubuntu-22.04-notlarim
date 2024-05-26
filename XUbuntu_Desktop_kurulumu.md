@@ -24,7 +24,7 @@ Sorunsuz yüklemeyi bitirdinizse, sunucunuzu yeniden başlatın.
 	sudo apt-get install xrdp
  	sudo service xrdp restart
 
-Termnalle işimiz bitmiş görünüyor.
+Terminalle işimiz bitmiş görünüyor.
 Şimdi kendi windows bilgisayarınıza giderek, sol alttaki uygulama arama kısmına "uzak" yazın ve aşağıdakini bulup çalıştırın.
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/9a0d446a-11da-47e6-b897-5ade3b80cf3e)
 
@@ -33,11 +33,23 @@ Karşı sunucunun ip adresini girin
 
 Terminalle bağlanırken kullandığınız kullanıcı adınızı, genelde "root" ve şifrenizi girerek, karşı sunucuya bağlanmanız lazım.
 
-Bağlandıktan sonra aşağıdaki gibi bir ekrana ulaşmanız lazım.
-![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/3bfac84c-b90d-4256-ac46-e24d33453c11)
+Bağlandıktan sonra aşağıdaki gibi bir ekrana ulaşmanız lazım. Buraya tekrar şifrenizi giriyor ve masa üstünüze ulaşıyorsunuz
+
+![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/c4a0bab3-6469-4325-8e64-a7499255048d)
 
 
-windows gibi kullanarak, uygulamalardan chrome bulup kurun. Chrome uzantı mağazasına gidip, metamask uzantısını ekleyin. Eski veya yeni adres alıp kelimeleri saklayın.
+### 3_ Ubuntu Chrome yükleme
+
+sol üstten Uygulamalar/internet Tarayıcısı var tıklayın arama kısmına chrome yazıp aratın ve download kısmında (64 bit .deb (Debian/Ubuntu için)) olanı indirin.
+![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/c0a97288-93b6-4451-85cd-8921290c9a75)
+
+Yine Uygulamalr/Dosya yönetici tıklayıp "indirilenler/download" klasörüne gidip Chrome bulun. 
+Sunucunuza inen (google-chrome-stable_current_amd64) dosyasının üzerine sağ tıklayıp "Gdebi paket kurucu ile aç" tıklayın.
+![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/8bb8b837-264f-4606-86f0-28a6129c5d24)
+
+
+### 4_ Rivalzi indirme ve kurma
+ Chrome uzantı mağazasına gidip, metamask uzantısını ekleyin. Eski veya yeni adres alıp kelimeleri saklayın.
  Sonra rivalzi.io sitesine yine sunucu üzerinden giderek For Linux olanı indirip kurun.
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/2a29f802-03fd-451c-8abe-c0b406fba7df)
 
