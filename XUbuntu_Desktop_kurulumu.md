@@ -15,9 +15,24 @@ xubuntu-desktop yükleyin.
 		
 		sudo apt install xubuntu-desktop
 
-![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/52866f14-798e-44eb-81ce-f3ee0203714c)
+Edited Hazen:
+Biz normalde root kullanıcısı olarak bağlanıyoruz ama nedense root olarak bağlandığımız zaman bize çok fazla kısıtlama getiriyor hiçbir şey yapamıyoruz. Chrome çalışmıyor uygulamalar açılmıyor vs.
+Bunun için önce farklı bir kullanıcı oluşturuyoruz. Konsolu açtıktan sonra, yenikulanici adında yeni bir kullanıcı oluşturacağız. 
 
-Sorunsuz yüklemeyi bitirdinizse, sunucunuzu yeniden başlatın.
+	sudo adduser yenikulanici
+
+yazıyoruz sonrasında şifre oluşturmamızı istiyor basit bir şeyler yazabiliriz 0000 veya root ile aynı şfreyi verebilrsiniz. daha sonrasında adres tam isim vs istiyor o kısımları da tam olarak dolduralım. Full name istediği yere ad soyad gibi 2 kısımdan oluşan bir isim yazın yoksa kabul etmiyor
+
+sonra bu kullanıcıya root yetkisi veriyoruz.
+
+	sudo usermod -aG sudo yenikulanici
+
+ yetkiyi verdikten sonra şağıda fotosunu attığım kısımdan bağlanırkenki kullanıcı adını ne koyduysak onu yazıyoruz root yerine. yeniden bağlanırken de kullanıcının şifresini giriyoruz. 0000 gibi. yeniden bağlanınca artık o hataları vermiyor.
+
+
+Sorunsuz yüklemeyi bitirdinizse, sunucunuzu yeniden başlatın. 
+		Not: bazı arkadaşlar yeniden başlatmaya gerek görmediler
+
 
 ### 2_ Ubuntu Uzak Masa Üstü bağlantısı Nasıl Yapılır
 
@@ -25,15 +40,18 @@ Sorunsuz yüklemeyi bitirdinizse, sunucunuzu yeniden başlatın.
  	sudo service xrdp restart
 
 Terminalle işimiz bitmiş görünüyor.
+
+
+
 Şimdi kendi windows bilgisayarınıza giderek, sol alttaki uygulama arama kısmına "uzak" yazın ve aşağıdakini bulup çalıştırın.
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/9a0d446a-11da-47e6-b897-5ade3b80cf3e)
 
 Karşı sunucunun ip adresini girin
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/545cf801-84d1-4b9f-971d-baff79a5815a)
 
-Terminalle bağlanırken kullandığınız kullanıcı adınızı, genelde "root" ve şifrenizi girerek, karşı sunucuya bağlanmanız lazım.
+Yukarıda yeni açtıınız kullanıcı adınızı, "yenikulanici" ve şifrenizi girerek, karşı sunucuya bağlanmanız lazım.
 
-Bağlandıktan sonra aşağıdaki gibi bir ekrana ulaşmanız lazım. Buraya tekrar şifrenizi giriyor ve masa üstünüze ulaşıyorsunuz
+Bağlandıktan sonra aşağıdaki gibi bir ekrana ulaşmanız lazım. Buraya tekrar (yenikulanici) içi olan şifrenizi giriyor ve masa üstünüze ulaşıyorsunuz
 
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/c4a0bab3-6469-4325-8e64-a7499255048d)
 
