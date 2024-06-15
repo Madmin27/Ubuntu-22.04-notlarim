@@ -6,6 +6,17 @@
 
 	service ssh restart
 
+
+### Ubuntu Desktop için mate Kurulumu
+
+	sudo apt update
+	sudo apt upgrade
+	sudo apt install ubuntu-mate-desktop
+![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/7992682e-10fa-4a8b-94ad-e4ed17578e11)
+
+lightdm'yi kullanın. 
+
+
 ### 1_ Ubuntu içerisine XFCE4/XUbuntu Desktop Kurulumu
 
 	sudo su
