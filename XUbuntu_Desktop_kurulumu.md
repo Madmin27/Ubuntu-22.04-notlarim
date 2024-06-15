@@ -1,23 +1,27 @@
 ### 1_ Ubuntu içerisine XFCE4/XUbuntu Desktop Kurulumu
 
+	sudo su
 Putty benzeri terminalinizi açıp karşı sunucunuza bağlanın ve aşağıdaki komutları girin.
 		
 		sudo apt update
 
- XFCE4 masaüstünü ve temel uygulamaları yükleyin.
+ Desktop görüntüsü için sunucunuz çok kısıtlıysa bu XFCE4 masaüstünü ve temel uygulamaları yükleyin.
 
-		sudo apt install xfce4
+		#sudo apt install xfce4
 
-xubuntu-desktop yükleyin.
+Desktop görüntüsü için sunucunuz biraz iyiyse bu xubuntu-desktop yükleyin.
 	Burada hangi oturum açma ekranının (Görüntü Yöneticisi) kullanılacağını seçmenizi isteyebilir. 
-	Orijinal giriş ekranını korumak için gdm3'ü seçin veya XUbuntu'da varsayılan olana geçmek için lightdm'yi kullanın. 
+ ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/7992682e-10fa-4a8b-94ad-e4ed17578e11)
+
+Orijinal giriş ekranını korumak için gdm3'ü seçin veya XUbuntu'da varsayılan olana geçmek için lightdm'yi kullanın. 
 	ve enterleyin
 		
 		sudo apt install xubuntu-desktop
 
+  Aşağıdakileri de yapınca sunucuyu restart edin
+
 Edited Hazen:
-Biz normalde root kullanıcısı olarak bağlanıyoruz ama nedense root olarak bağlandığımız zaman bize çok fazla kısıtlama getiriyor hiçbir şey yapamıyoruz. Chrome çalışmıyor uygulamalar açılmıyor vs.
-Bunun için önce farklı bir kullanıcı oluşturuyoruz. Konsolu açtıktan sonra, yenikulanici adında yeni bir kullanıcı oluşturacağız. 
+Konsolu açtıktan sonra, yenikulanici adında yeni bir kullanıcı oluşturacağız. 
 
 	sudo adduser yenikulanici
 
@@ -89,6 +93,14 @@ Yine Uygulamalar/Dosya yönetici tıklayıp "indirilenler/download" klasörüne 
 
 Sunucunuza inen (google-chrome-stable_current_amd64) dosyasının üzerine sağ tıklayıp "Gdebi paket kurucu ile aç" tıklayın.
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/8bb8b837-264f-4606-86f0-28a6129c5d24)
+
+Sorun yaşıyorsanız
+
+	sudo apt-get update && sudo apt-get dist-upgrade 
+ 	sudo apt-get clean && sudo apt-get autoremove
+  	sudo apt --fix-broken install
+   	sudo dpkg --configure -a
+  
 
 ## 3_2 Chrome Alternatif yükleme yöntemi
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/661ed8e6-8d5b-48b5-91c2-b36511b643e7)
