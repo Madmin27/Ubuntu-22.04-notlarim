@@ -6,7 +6,6 @@
 
 	service ssh restart
 
-
 ### Ubuntu Desktop için mate Kurulumu
 
 	sudo apt update
