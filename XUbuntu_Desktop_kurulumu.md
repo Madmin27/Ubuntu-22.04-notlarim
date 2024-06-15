@@ -1,3 +1,10 @@
+
+
+	sudo passwd root
+ 	sudo nano /etc/ssh/sshd_config
+  Dosyanın içinde bulunan PermitRootLogin without-password yazan kısmı PermitRootLogin yes olarak değiştiriyor, yoksa oralara ekliyoruz
+
+
 ### 1_ Ubuntu içerisine XFCE4/XUbuntu Desktop Kurulumu
 
 	sudo su
