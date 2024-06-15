@@ -1,8 +1,15 @@
 
+root kulannıcınız yoksa veya şifre tanımlanmamışsa aşağıdaki yapın
 
 	sudo passwd root
+ 
+ ssh root bağlantısı için
+ 
  	sudo nano /etc/ssh/sshd_config
-  Dosyanın içinde bulunan PermitRootLogin without-password yazan kısmı PermitRootLogin yes olarak değiştiriyor, yoksa oralara ekliyoruz
+  
+  Dosyanın içinde bulunan "PermitRootLogin without-password" yazan kısmı "PermitRootLogin yes" olarak değiştiriyor, yoksa oralara ekliyoruz
+  #Include /etc/ssh/sshd_config.d/*.conf şeklinde başına işaret koyun
+  CTRL X
 
 	service ssh restart
 
