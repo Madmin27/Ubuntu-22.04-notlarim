@@ -2,6 +2,8 @@
 root kulannıcınız yoksa veya şifre tanımlanmamışsa aşağıdaki yapın
 
 	sudo passwd root
+ ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/a273c5b1-3630-4ddb-bb81-58cce039d5ed)
+
  
  ssh root bağlantısı için
  
