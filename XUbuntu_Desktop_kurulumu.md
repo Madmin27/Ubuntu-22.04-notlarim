@@ -1,5 +1,5 @@
 
-root kulannıcınız yoksa veya şifre tanımlanmamışsa aşağıdaki yapın
+root kulanıcınız yoksa veya şifre tanımlanmamışsa aşağıdaki yapın varsa gerek yok.
 
 	sudo passwd root
  ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/a273c5b1-3630-4ddb-bb81-58cce039d5ed)
@@ -62,37 +62,14 @@ bu panelde "kimlik bilgilerimi kaydet" seçeneğini işaretli hale getiriniz
 
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/25f922ae-abb2-4321-840a-34a93658ca45)
 
-Bağlandıktan sonra aşağıdaki gibi bir ekrana ulaşmanız lazım. Buraya tekrar (yenikulanici) içi olan şifrenizi giriyor ve masa üstünüze ulaşıyorsunuz
+Bağlandıktan sonra aşağıdaki gibi bir ekrana ulaşmanız lazım. Buraya tekrar root ve  şifrenizi giriyor ve masa üstünüze ulaşıyorsunuz
 
-![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/c4a0bab3-6469-4325-8e64-a7499255048d)
+![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/11c319ae-e752-4bb4-885f-4bf5d50a86e4)
 
 
 ### 3_ Ubuntu Chrome yükleme
-	Not: aşağıdaki yöntemde hata alanlar, 3_2 Alternatif yöntemi deneyesinler
-## 3_1 
-sol üstten Uygulamalar/internet Tarayıcısı var tıklayın arama kısmına chrome yazıp aratın ve download kısmında (64 bit .deb (Debian/Ubuntu için)) olanı indirin.
-![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/c0a97288-93b6-4451-85cd-8921290c9a75)
 
-Yine Uygulamalar/Dosya yönetici tıklayıp "indirilenler/download" klasörüne gidip Chrome bulun. 
-
-	Not: Aşağıdaki işlemi yaparken sorun yaşarsanız. Kendi pc nizdeki terminalden sunucunuza bağlanıp
-		sudo apt install gdebi
-
-Sunucunuza inen (google-chrome-stable_current_amd64) dosyasının üzerine sağ tıklayıp "Gdebi paket kurucu ile aç" tıklayın.
-![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/8bb8b837-264f-4606-86f0-28a6129c5d24)
-
-Sorun yaşıyorsanız
-
-	sudo apt-get update && sudo apt-get dist-upgrade 
- 	sudo apt-get clean && sudo apt-get autoremove
-  	sudo apt --fix-broken install
-   	sudo dpkg --configure -a
-  
-
-## 3_2 Chrome Alternatif yükleme yöntemi
-![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/661ed8e6-8d5b-48b5-91c2-b36511b643e7)
-Bu hatayı alıyorsanız, Chrome'u yüklemek için kendi pc nizden ssh germinalinizle karşı sunucuya bağlanın ve aşağıdaki komutlarla yüklemeye çalışın.
-Komutu kullanarak indirin: 
+Terminal pencerenize dönüp
 	
  	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
@@ -104,15 +81,9 @@ tarayıcıyı başlatın:
 		
   	google-chrome
 
-Şimdi sol üstteki uygulamalarda internet menüsünde chrome görmeniz lazım. Bulamazsanız üstten arama yapın
-Varsayılan browser Chrome olsun istiyorsanız
+Şimdi uzak masaüstünden ubuntı mate masa üstüne bağlanıp, menu/internet/chrome çalıştırın 
+![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/98e76abc-65a6-4af7-bea2-90087856b78e)
 
-![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/6e93e662-e2a5-4f03-a46b-aae61d29df14)
-veya terminalden	
- 	xfce4-settings-manager
-gidin "Preferred Applications"
- "Web Browser", altında tıklayın "ayarlar"
-type in /usr/bin/google-chrome
 
 ### 4_ Rivalzi indirme ve kurma
  Chrome uzantı mağazasına gidip, metamask uzantısını ekleyin. Eski veya yeni adres alıp kelimeleri saklayın.
