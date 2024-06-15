@@ -25,46 +25,6 @@ root kulannıcınız yoksa veya şifre tanımlanmamışsa aşağıdaki yapın
 lightdm'yi kullanın. 
 
 
-### 1_ Ubuntu içerisine XFCE4/XUbuntu Desktop Kurulumu
-
-	sudo su
-Putty benzeri terminalinizi açıp karşı sunucunuza bağlanın ve aşağıdaki komutları girin.
-		
-		sudo apt update
-
- Desktop görüntüsü için sunucunuz çok kısıtlıysa bu XFCE4 masaüstünü ve temel uygulamaları yükleyin.
-
-		#sudo apt install xfce4
-
-Desktop görüntüsü için sunucunuz biraz iyiyse bu xubuntu-desktop yükleyin.
-	Burada hangi oturum açma ekranının (Görüntü Yöneticisi) kullanılacağını seçmenizi isteyebilir. 
- ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/7992682e-10fa-4a8b-94ad-e4ed17578e11)
-
-Orijinal giriş ekranını korumak için gdm3'ü seçin veya XUbuntu'da varsayılan olana geçmek için lightdm'yi kullanın. 
-	ve enterleyin
-		
-		sudo apt install xubuntu-desktop
-
-  Aşağıdakileri de yapınca sunucuyu restart edin
-
-Edited Hazen:
-Konsolu açtıktan sonra, yenikulanici adında yeni bir kullanıcı oluşturacağız. 
-
-	sudo adduser yenikulanici
-
-yazıyoruz sonrasında şifre oluşturmamızı istiyor basit bir şeyler yazabiliriz 0000 veya root ile aynı şfreyi verebilrsiniz. daha sonrasında adres tam isim vs istiyor o kısımları da tam olarak dolduralım. Full name istediği yere ad soyad gibi 2 kısımdan oluşan bir isim yazın yoksa kabul etmiyor
-
-sonra bu kullanıcıya root yetkisi veriyoruz.
-
-	sudo usermod -aG sudo yenikulanici
-
- yetkiyi verdikten sonra şağıda fotosunu attığım kısımdan bağlanırkenki kullanıcı adını ne koyduysak onu yazıyoruz root yerine. yeniden bağlanırken de kullanıcının şifresini giriyoruz. 0000 gibi. yeniden bağlanınca artık o hataları vermiyor.
-
-
-Sorunsuz yüklemeyi bitirdinizse, sunucunuzu yeniden başlatın. 
-		Not: bazı arkadaşlar yeniden başlatmaya gerek görmediler
-
-
 ### 2_ Ubuntu Uzak Masa Üstü bağlantısı Nasıl Yapılır
 
  	sudo su
