@@ -36,8 +36,25 @@ Sorunsuz yüklemeyi bitirdinizse, sunucunuzu yeniden başlatın.
 
 ### 2_ Ubuntu Uzak Masa Üstü bağlantısı Nasıl Yapılır
 
-	sudo apt-get install xrdp
+ 	sudo su
+	apt-get install xrdp
+ 	systemctl enable xrdp
+  	systemctl start xrdp
+ 	usermod -a -G ssl-cert xrdp
  	sudo service xrdp restart
+  	systemctl status xrdp
+   ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/6d18cfca-aeb0-4339-be7b-a6cd5e09e46e)
+
+   xrdp kullanıcısını “ssl-cert” grubuna ekleyin. 
+
+    	usermod -a -G ssl-cert xrdp
+     	systemctl restart xrdp
+
+  ufw varsa
+
+   	ufw allow from 192.168.1.0/24 to any port 3389
+
+
 
 Terminalle işimiz bitmiş görünüyor.
 
@@ -50,6 +67,9 @@ Karşı sunucunun ip adresini girin
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/545cf801-84d1-4b9f-971d-baff79a5815a)
 
 Yukarıda yeni açtıınız kullanıcı adınızı, "yenikulanici" ve şifrenizi girerek, karşı sunucuya bağlanmanız lazım.
+bu panelde "kimlik bilgilerimi kaydet" seçeneğini işaretli hale getiriniz
+
+![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/25f922ae-abb2-4321-840a-34a93658ca45)
 
 Bağlandıktan sonra aşağıdaki gibi bir ekrana ulaşmanız lazım. Buraya tekrar (yenikulanici) içi olan şifrenizi giriyor ve masa üstünüze ulaşıyorsunuz
 
