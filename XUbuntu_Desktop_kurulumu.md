@@ -57,12 +57,12 @@ Terminalle işimiz bitmiş görünüyor.
 Karşı sunucunun ip adresini girin
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/545cf801-84d1-4b9f-971d-baff79a5815a)
 
-Yukarıda yeni açtıınız kullanıcı adınızı, "yenikulanici" ve şifrenizi girerek, karşı sunucuya bağlanmanız lazım.
+şimdi bu panele root değil de diğer kullanıcı adınızla ve şifrenizle gireceksiniz, aksi halde chrome falan çalıştırırken permission hatası alırsınız.
 bu panelde "kimlik bilgilerimi kaydet" seçeneğini işaretli hale getiriniz
 
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/25f922ae-abb2-4321-840a-34a93658ca45)
 
-Bağlandıktan sonra aşağıdaki gibi bir ekrana ulaşmanız lazım. Buraya tekrar root ve  şifrenizi giriyor ve masa üstünüze ulaşıyorsunuz
+ 
 
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/11c319ae-e752-4bb4-885f-4bf5d50a86e4)
 
