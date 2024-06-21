@@ -20,6 +20,8 @@ root kulanıcınız yoksa veya şifre tanımlanmamışsa aşağıdaki yapın var
 	sudo apt update
 	sudo apt upgrade
 	sudo apt install ubuntu-mate-desktop
+	apt install openssh-server
+ 
 ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/7992682e-10fa-4a8b-94ad-e4ed17578e11)
 
 lightdm'yi kullanın. 
@@ -47,6 +49,13 @@ lightdm'yi kullanın.
    	ufw allow from 192.168.1.0/24 to any port 3389
 	ufw allow 3389
 
+Tekrar bağlandığınızda sorun yaşıyorsanız veya düz ekran geliyorsa 
+
+	ps aux | grep gnome-session-binary
+ çıkan satırlardaki proses Id lerini aşağıdaki gibi bitirin
+ 
+		kill 4421 56636 56935
+  
 Sorunlarınızın çözümü içinaşağıdaki linkten faydalanabilirsiniz
 https://luppeng.wordpress.com/2024/03/12/set-up-xrdp-on-ubuntu-22-04-with-the-gnome-desktop-environment/
 
