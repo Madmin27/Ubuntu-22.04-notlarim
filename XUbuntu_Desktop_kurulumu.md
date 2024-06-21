@@ -28,23 +28,27 @@ lightdm'yi kullanın.
 ### 2_ Ubuntu Uzak Masa Üstü bağlantısı Nasıl Yapılır
 
  	sudo su
-	apt-get install xrdp
+	apt install xrdp -y
  	systemctl enable xrdp
   	systemctl start xrdp
- 	usermod -a -G ssl-cert xrdp
- 	sudo service xrdp restart
   	systemctl status xrdp
+
    ![image](https://github.com/Madmin27/Ubuntu-22.04-notlarim/assets/94014225/6d18cfca-aeb0-4339-be7b-a6cd5e09e46e)
 
    xrdp kullanıcısını “ssl-cert” grubuna ekleyin. 
 
+	systemctl stop xrdp
     	usermod -a -G ssl-cert xrdp
+     	adduser xrdp ssl-cert
      	systemctl restart xrdp
 
   ufw varsa
 
    	ufw allow from 192.168.1.0/24 to any port 3389
+	ufw allow 3389
 
+Sorunlarınızın çözümü içinaşağıdaki linkten faydalanabilirsiniz
+https://luppeng.wordpress.com/2024/03/12/set-up-xrdp-on-ubuntu-22-04-with-the-gnome-desktop-environment/
 
 
 Terminalle işimiz bitmiş görünüyor.
