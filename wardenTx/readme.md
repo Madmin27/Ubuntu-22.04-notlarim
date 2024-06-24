@@ -10,6 +10,8 @@ Gerekli Node.js kütüphanelerini kurmamız gerekiyor:
     npm update
     
     npm install @cosmjs/stargate
+    npm install ethers dotenv
+
 
 wsend klasörü içerisinde iken yukarıda verilen .env ve wsend.js dosyalarını bu klasöre kopyalamanız gerekiyor
 
