@@ -24,3 +24,6 @@ Aşağıdaki komutla da screen içerisinde çalıştırınız. Başarılar
 
 CTRL +A+D ile çıkınız
 
+
+Not :
+ wsend.js dosyası içerisindeki rpc adresini kendinizinki veya daha sağlam bir rpc ile değiştirebilirsiniz
