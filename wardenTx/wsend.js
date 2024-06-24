@@ -9,7 +9,7 @@ const rpcEndpoint = 'https://wardentestnet-rpc.minen.com.tr/'; // RPC endpoint
 const fromAddress = process.env.FROM_ADDRESS; 
 const toAddress = process.env.TO_ADDRESS; 
 // const toAddress = 'wardenxxxxx'; // Alıcı adresi
-const amountToSend = '8000'; // Gönderilecek miktar
+const amountToSend = '100'; // Gönderilecek miktar
 
 async function main() {
   if (!mnemonic) {
